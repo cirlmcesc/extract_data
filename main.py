@@ -212,12 +212,10 @@ def getLegalAbstractAndextractData(tr_content): #获得信息内容并提取数�
         soup = BeautifulSoup.BeautifulSoup(resault.text)
 
         soup = soup.find('table').findAll("a", limit = 3)
-        
     except requests.exceptions.ReadTimeout: #请求超时则休眠一分钟后重新尝试
         time.sleep(60)
 
         return getLegalAbstractAndextractData(tr_content)
-
     except AttributeError: #尝试重新获得数据
         return getLegalAbstractAndextractData(tr_content) 
 
