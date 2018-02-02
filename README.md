@@ -1,14 +1,14 @@
-# extract_data
+# pkulaw-spider
 
-### 一个从 "北大法宝" 网站上抓取所需数据的小程序
+### 基于bs3的spider, 用于从 "北大法宝" 网站上抓取所需数据.
 
 ### 使用
 
-* 环境要求 
+* 环境要求
 
     * Python 2.7 <br>
 
-    * 所需依赖 
+    * 所需依赖
 
         * MySQLdb // MySQL数据库操作库
         * BeautifulSoup // 对象化dom树, [Doc](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/#)
